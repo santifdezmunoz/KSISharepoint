@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'KSISharepoint', :exclusive => true do
+  pod "KSISharepoint", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "KSISharepoint", :path => "../"
+
+  pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+end
